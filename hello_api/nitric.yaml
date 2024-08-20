@@ -1,0 +1,6 @@
+name: hello_api
+preview:
+  - sql-databases
+services:
+  - match: lib/services/**/*_api.dart
+    start: dart run $SERVICE_PATH
