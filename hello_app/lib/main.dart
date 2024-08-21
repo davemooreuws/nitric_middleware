@@ -24,7 +24,7 @@ class MainApp extends ConsumerWidget {
 }
 
 final helloProvider = FutureProvider<String>((ref) async {
-  final client = ref.watch(apiClientProvider('http://localhost:4011'));
+  final client = ref.watch(apiClientProvider('http://localhost:4001'));
 
   return client.execute<String, String>(
     const GetRequest('/hello/Ryan'),
